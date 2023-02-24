@@ -4,11 +4,11 @@ import { useSearchParams } from 'react-router-dom'
 import { connect, useDispatch, useSelector } from "react-redux";
 
 import { incrementAction } from "../../redux/actions/count";
-import { addPerson } from './../../redux/actions/test2';
+import { addPerson } from '../../redux/actions/test2';
 
 function Test2({ count, jia100 }) {
 
-    let [search, setSearch] = useSearchParams();
+    let [search] = useSearchParams();
     console.log("&", search);
     let age = search.get("age");
     let name = search.get("name");
@@ -23,7 +23,7 @@ function Test2({ count, jia100 }) {
     }
 
     const addaPerson = () => {
-        let p = { name: "呵呵呵", age: 223 }
+        let p = { name: "呵呵呵1116666", age: 22883 }
         dispatch(addPerson(p))
     }
     return (

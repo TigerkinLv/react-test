@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, redirect, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 export default function Test() {
 
@@ -9,8 +9,8 @@ export default function Test() {
     function toTest1() {
         navigate("test1", {
             state: {
-                name: "哈哈",
-                age: 22
+                name: "哈哈888",
+                age: 28
             }
         })
     }
